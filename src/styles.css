@@ -26,9 +26,10 @@ nav button {
 }
 
 footer {
-    opacity: 0.6;
+    order: 3;
+    opacity: 0.7;
     line-height: 2em; /* Used to increase container height while centering text */
-    background-color: rgb(35 35 35);
+    background-color: rgb(35, 35, 35, 0.8);
     margin-top: auto;
     font-size: 0.82em;
     color: rgb(255, 255, 255);
