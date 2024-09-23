@@ -9,10 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-}
-
-nav {
-    background-color: blanchedalmond;
+    background: bottom 25% right 50% / cover no-repeat url("./images/main-bg.jpg");
 }
 
 nav button {
@@ -21,18 +18,20 @@ nav button {
 }
 
 #content {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    color: white;
     margin-top: 4em;
     flex-grow: 1;
 }
 
 footer {
+    opacity: 0.6;
     line-height: 2em; /* Used to increase container height while centering text */
-    background-color: rgb(220, 223, 188);
+    background-color: rgb(169, 177, 81);
     margin-top: auto;
     font-size: 0.82em;
-    color: rgb(62, 62, 75);
+    color: rgb(255, 255, 255);
 }
 footer a {
-    color: rgb(17, 17, 204);
+    color: rgb(99, 99, 248);
 }
