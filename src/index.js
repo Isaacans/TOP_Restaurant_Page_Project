@@ -1,3 +1,2 @@
 import "./styles.css";
-
-console.log('Hi!');
+import "./footer-module.js"
