@@ -11,7 +11,6 @@ function showHomePage() {
     const menu = document.createElement("div");
     menu.classList.add("home");
 
-
     const heading = document.createElement("h1");
     const headingContent = document.createTextNode("Welcome to Build a Bowl");
     heading.appendChild(headingContent);

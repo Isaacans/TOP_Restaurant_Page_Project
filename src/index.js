@@ -2,6 +2,7 @@ import "./styles.css"; // Loads the style sheet
 import "./footer-module.js"; // Adds the footer to the page
 import showHomePage, {contentContainer} from "./home-module.js"; 
 import {showMenuPage} from "./menu-module.js";
+import {showAboutPage} from "./about-module.js";
 
 showHomePage(); // Shows home page on load
 
@@ -20,11 +21,10 @@ document.getElementsByTagName("nav")[0].addEventListener("click", function(event
                 showHomePage();
                 break;
             case "menu":
-                console.log("menu");
                 showMenuPage();
                 break;
             case "about":
-                console.log("about");
+                showAboutPage();
                 break;
         }
     }

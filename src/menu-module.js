@@ -1,5 +1,4 @@
-/* Declares and exports a function that builds below 
-HTML tags/content for the 'menu' page
+/* Declares and exports a function that builds the 'menu' page starting from below layout
 
     <div class="menu">
         <div class="menu-card"></div>
@@ -54,15 +53,9 @@ function showMenuPage() {
     menu.appendChild(createNewFood("Canned Peas", "Vegetable", "$2"));
     menu.appendChild(createNewFood("Canned Tomato", "Vegetable", "$1"));
     menu.appendChild(createNewFood("Canned Mushroom", "Vegetable", "$2"));
-    
+
     contentContainer.appendChild(menu);
 };
 
 
 export {showMenuPage}
-
-/*
-Takes food name, food type, price 
-creates a menu card,
-adds it to div.menu
-*/
