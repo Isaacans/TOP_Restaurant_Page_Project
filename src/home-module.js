@@ -7,6 +7,11 @@ along with a reference to the to the div#content element:
 const contentContainer = document.getElementById("content");
 
 function showHomePage() {
+
+    const menu = document.createElement("div");
+    menu.classList.add("home");
+
+
     const heading = document.createElement("h1");
     const headingContent = document.createTextNode("Welcome to Build a Bowl");
     heading.appendChild(headingContent);
@@ -15,8 +20,10 @@ function showHomePage() {
     const paraContent = document.createTextNode("Choose from our wholesome range of nutritious ingredients to design your personal meal!");
     para.appendChild(paraContent);
     
-    contentContainer.appendChild(heading);
-    contentContainer.appendChild(para);
+    menu.appendChild(heading)
+    menu.appendChild(para)
+    contentContainer.appendChild(menu);
+
 };
 
 export {showHomePage as default, contentContainer}

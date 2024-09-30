@@ -4,12 +4,13 @@ root, *, body {
 
 body {
     text-align: center;
-    background-color: beige;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 102vh;
     margin: 0;
-    background: bottom 22% right 50% / cover no-repeat url("./images/main-bg.jpg");
+    background: bottom 14% right 50% / cover no-repeat url("./images/main-bg.jpg");
+    background-attachment: fixed;
+    background-color: rgb(12, 4, 0);
 }
 
 nav button {
@@ -25,6 +26,19 @@ nav button {
     flex-grow: 1;
 }
 
+.home {
+    font-size: 1.5em;
+
+    width: 40%;
+    margin: 1em auto;
+    min-width: 350px;
+    padding: 3em 1em;
+}
+.home p,
+.home h1 {
+    background-color: rgb(63 59 12 / 55%);
+}
+
 footer {
     order: 3;
     opacity: 0.7;
@@ -36,4 +50,26 @@ footer {
 }
 footer a {
     color: rgb(108 145 255);
+}
+
+.menu {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.295);
+    width: 40%;
+    margin: 1em auto;
+    min-width: 350px;
+    padding: 2em 1em;
+}
+.menu-card {
+    font-size: 1.6em;
+    margin: 1.5em auto;
+    padding: 1em;
+    width: 8em;
+    background-color: rgba(53, 53, 37, 0.637);
+}
+.menu-card :nth-child(2) {
+    font-size: 0.5em;
+}
+.menu-card :nth-child(3) {
+    font-size: 0.8em;
 }
