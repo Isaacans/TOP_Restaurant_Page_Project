@@ -5,13 +5,19 @@
 */
 
 const footer = document.createElement("footer");
-const text = document.createTextNode("Images by ");
-footer.appendChild(text);
 
+footer.innerText = "Photo by ";
 const link = document.createElement("a");
 link.setAttribute("href", "http://www.freepik.com/")
-const linkContent = document.createTextNode("freepik");
-link.appendChild(linkContent);
+link.innerText = "freepik"
 footer.appendChild(link);
 
+footer.appendChild(document.createTextNode(" - Bowl icon by "));
+const link2 = document.createElement("a");
+link2.setAttribute("href", "https://www.freepik.com/icon/salad_11661826");
+link2.innerText = "kmg design";
+footer.appendChild(link2);
+
+{/* <a href="https://www.freepik.com/search">Icon by Maan Icons</a> */}
+{/* <a href="https://www.freepik.com/icon/salad_11661826">Icon by kmg design</a> */}
 document.body.appendChild(footer);
